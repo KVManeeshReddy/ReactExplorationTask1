@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import FunctionComponent from './FunctionalComponent/FunctionalComponent';
+import ReactComponent from './ReactComponent/ReactComponent';
+import CreateElement from './CreateElement/CreateElement';
+import PureComponentContainer from './PureComponentContainer/PureComponentContainer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="wrapper">
+      <FunctionComponent/>
+      <ReactComponent/>
+      <CreateElement/>
+      <PureComponentContainer/>
+      </div>
     </div>
   );
 }
